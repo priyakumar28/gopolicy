@@ -64,8 +64,7 @@ try{
 }
 catch (error) {
     console.log(error);
-}
-    
+}   
   };
 
   return (
@@ -139,8 +138,7 @@ catch (error) {
               mt={2}
               display={"flex"}
               flexDirection={"row"}
-              columnGap={2}
-            >
+              columnGap={2} >
               <Grid item>
                 <Typography>Phone</Typography>
               </Grid>
@@ -150,6 +148,7 @@ catch (error) {
                   type="text"
                   variant="outlined"
                   size="small"
+                  label='phone'
                   {...register("phone", { require: true })}
                   error={!!errors.phone}
                   helperText={errors.phone?.message}
